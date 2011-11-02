@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>KmoBi | Mobiel Zoeken </title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="HandheldFriendly" content="true" />
+    <link rel="alternate" media="handheld" href="" />
+    <style type="text/css">
+            body {font-size:small;font-family:Tahoma,Verdana,Arial;background: #FFFFFF;}
+            table { background: #003b77; padding: 5px; margin-top: 10px; color: #252525; border: solid;}
+            table td { color: #ffffff;}
+            a { color: #FFFFFF; } 
+            b { color: #FFFFFF; }
+    </style>
+</head>
+<body onload="document.getElementById('query').focus();" >
+
+
+<table border=0>
+<thead>
+    <tr><td colspan=3 align="right"><a href="en/"><img src="en.png" alt="This page in English" border=0></a></td></tr>
+    <tr>
+    <td>
+        <b>Bezoekadres</b><br>
+        Prins Willem-Alexanderhof 5 <br>
+        2595 BE Den Haag <br>
+        070 - 3140310 <br>
+        <a href="http://www.kb.nl/">www.kb.nl</a>
+    </td>
+    <td valign="top">
+        <a href="/mobileSearch/"><img src="logo_kb_home.gif" alt="logo_kb" border="0" style="margin: 5px;"/></a>
+    </td>
+    <td align=right>
+        <b style="valign: right;">Openingstijden</b><br>
+        ma en vr : 10.00 - 18.00<br>
+        di t/m do : 10.00 - 20.00<br>
+        za : 10.00 - 16.00<br>
+        <br>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="3">
+        <center>
+        <br>
+        <form action="/mobileSearch/search" method="get">
+        <label for="query"> </label>
+        <input type="text" name="query" id="query" size="50" maxlength="2048" value="" autocomplete="off" /> 
+        <input type="submit" value="Zoek" /> <br /><br />
+        <input type="hidden" name="startrecord" id="startrecord" value="1" />
+        </center>
+    </td>
+    </tr>
+    <tr><td colspan=3>
+
+<label for="field"> Zoek in veld : </label>
+<select id="field" name="field">
+<optgroup label="ZoekVeld">
+<option value="cql.serverchoice">Alle velden</option>
+<option value="dc.title">Titel</option>
+<option value="dc.creator">Auteur</option>
+<option value="dc.subject">Onderwerp</option>
+</optgroup>
+</select>
+
+<br />
+
+<label for="searchcollection">
+Zoek binnen collectie : </label>
+<select id="searchcollection" name="searchcollection">
+<optgroup label="ZoekCollectie">
+<option value="">Alle collecties</option>
+<option value='ispartof=Algemene+catalogus'>Algemene Catalogus</option>
+<option value='ispartof=GVN'>Geheugen van Nederland</option>
+<option value='ispartof=e-depot'>E-Depot</option>
+<option value='ispartof=Staten+Generaal'>Staten Generaal</option>
+<option value='ispartof=ANP'>ANP</option>
+</optgroup>
+</select>
+<br/>
+
+<label for="searchtype">
+Zoek op materiaal type: </label>
+<select id="searchtype" name="searchtype">
+<optgroup label="ZoekTypeMateriaal">
+<option value="">Alle Materiaaltypen</option>
+<option value='type=boeken'>Boeken</option>
+<option value='type=tijdschriften'>Tijdschriften</option>
+<option value='type=kranten'>Kranten</option>
+<option value='type=beeldmateriaal'>Beeldmateriaal</option>
+</optgroup>
+</select>
+</form>
+<br/>
+</td></tr><tr>
+
+
+    <td colspan=3><center>
+        <a href="help.html">Hulp bij mobiel zoeken</a>&nbsp;||&nbsp;<a href="index.html">Normaal zoeken</a>&nbsp;||&nbsp;<a href="uwmening.html">Uw mening telt</a></center>
+</td></tr></table>
+
+</body>
+</html>
